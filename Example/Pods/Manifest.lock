@@ -1,0 +1,16 @@
+PODS:
+  - Elina (0.1.0)
+
+DEPENDENCIES:
+  - Elina (from `../`)
+
+EXTERNAL SOURCES:
+  Elina:
+    :path: ../
+
+SPEC CHECKSUMS:
+  Elina: cfe2754ef7fb75c993ab65886825fffb08f36b70
+
+PODFILE CHECKSUM: 38b65a0c0a7cb01c4506b883ce087d3481143b95
+
+COCOAPODS: 1.3.1

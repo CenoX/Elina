@@ -1,0 +1,6 @@
+framework module Elina {
+  umbrella header "Elina-umbrella.h"
+
+  export *
+  module * { export * }
+}

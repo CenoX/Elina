@@ -1,0 +1,560 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		278DAC87D8AE0F740682BA72CDD9A74A /* Elina-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 66A8F00A285BBAA6030B88743EECB150 /* Elina-dummy.m */; };
+		3CA836AF2C86C520956D730D05A0C2C5 /* Pods-Elina_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F58D6A41A4FCB567294DBF6E6C7E0D81 /* Pods-Elina_Tests-dummy.m */; };
+		8382E1FF0233BD21FCF058EB46383AD5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		9927352AD40F13EC6C62AC5BC527685B /* Elina.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BF1812A3B5856486ABEEEABA3FB0251 /* Elina.swift */; };
+		C188C9935A51E41207E6B79E7F88CA6D /* Elina-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 51F965F66749934099ECC5F009E3DDD5 /* Elina-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C7946256C60EAAE4D4018A3F636ABEE3 /* Pods-Elina_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 02378A2BCE3E92D38B3D07680B8BB697 /* Pods-Elina_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D995E119AE5C4F465676385F572A26EC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5B3725CA66BEB5CB93ED722A2C621854 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5D6854D7C3FA01F0184A7F2B2F0EB6D1;
+			remoteInfo = Elina;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		02378A2BCE3E92D38B3D07680B8BB697 /* Pods-Elina_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Elina_Tests-umbrella.h"; sourceTree = "<group>"; };
+		058CA002B5B872D32811CD62E8CCD89A /* Elina.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Elina.xcconfig; sourceTree = "<group>"; };
+		22490F3A481728A5D2EDB8AA6097E298 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2474073EE1316BE8229ADD5D49C33690 /* Pods-Elina_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Elina_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		36DFDCC8A3A94A075E1B1CFBCC0E7D6C /* Elina.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Elina.modulemap; sourceTree = "<group>"; };
+		51F965F66749934099ECC5F009E3DDD5 /* Elina-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Elina-umbrella.h"; sourceTree = "<group>"; };
+		52CB25EDDACF985A9FA348B229DEACB1 /* Pods-Elina_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Elina_Tests.modulemap"; sourceTree = "<group>"; };
+		5E0F5CB3EBE482380E2B2753E2798146 /* Pods-Elina_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Elina_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		66A8F00A285BBAA6030B88743EECB150 /* Elina-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Elina-dummy.m"; sourceTree = "<group>"; };
+		8314BBF9D0A86EBF876B8362412BB2D5 /* Pods-Elina_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Elina_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		8BF1812A3B5856486ABEEEABA3FB0251 /* Elina.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Elina.swift; path = Elina/Classes/Elina.swift; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A5569F166B3CD5E62DE554C0708B4B42 /* Elina-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Elina-prefix.pch"; sourceTree = "<group>"; };
+		A9B23CB50D1726C82D135E30DAB5C95A /* Pods-Elina_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Elina_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		B2CCE84041CA31DC5CE50792DF1CA678 /* Pods-Elina_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Elina_Tests-resources.sh"; sourceTree = "<group>"; };
+		BB500BB82E324EE7D6C9700B559153C8 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E1A0CB29347A900897C475A8B2A1EED1 /* Elina.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Elina.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E3FEA9C87B582C83A700620BDF9C96A3 /* Pods_Elina_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Elina_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F58D6A41A4FCB567294DBF6E6C7E0D81 /* Pods-Elina_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Elina_Tests-dummy.m"; sourceTree = "<group>"; };
+		FF2B9D0FDCA38E114CD0905AB7979DE4 /* Pods-Elina_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Elina_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B2E5DC799FC5FBE4E5E3730F1722B8E6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D995E119AE5C4F465676385F572A26EC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA9AE6A7316EBB9027ADBA86BA4F2807 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8382E1FF0233BD21FCF058EB46383AD5 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1D1BF7F8CD1371C0CA8B9A3C6C3390F1 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				36DFDCC8A3A94A075E1B1CFBCC0E7D6C /* Elina.modulemap */,
+				058CA002B5B872D32811CD62E8CCD89A /* Elina.xcconfig */,
+				66A8F00A285BBAA6030B88743EECB150 /* Elina-dummy.m */,
+				A5569F166B3CD5E62DE554C0708B4B42 /* Elina-prefix.pch */,
+				51F965F66749934099ECC5F009E3DDD5 /* Elina-umbrella.h */,
+				22490F3A481728A5D2EDB8AA6097E298 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/Elina";
+			sourceTree = "<group>";
+		};
+		32B838D2697DDD876C36BDEBC09BFD2E /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8A3248CCA7411890B4050353B702E1E1 /* Elina */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		65B9BF88ADB335B6526DA14021BA9DE0 /* Pods-Elina_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				BB500BB82E324EE7D6C9700B559153C8 /* Info.plist */,
+				52CB25EDDACF985A9FA348B229DEACB1 /* Pods-Elina_Tests.modulemap */,
+				2474073EE1316BE8229ADD5D49C33690 /* Pods-Elina_Tests-acknowledgements.markdown */,
+				FF2B9D0FDCA38E114CD0905AB7979DE4 /* Pods-Elina_Tests-acknowledgements.plist */,
+				F58D6A41A4FCB567294DBF6E6C7E0D81 /* Pods-Elina_Tests-dummy.m */,
+				8314BBF9D0A86EBF876B8362412BB2D5 /* Pods-Elina_Tests-frameworks.sh */,
+				B2CCE84041CA31DC5CE50792DF1CA678 /* Pods-Elina_Tests-resources.sh */,
+				02378A2BCE3E92D38B3D07680B8BB697 /* Pods-Elina_Tests-umbrella.h */,
+				A9B23CB50D1726C82D135E30DAB5C95A /* Pods-Elina_Tests.debug.xcconfig */,
+				5E0F5CB3EBE482380E2B2753E2798146 /* Pods-Elina_Tests.release.xcconfig */,
+			);
+			name = "Pods-Elina_Tests";
+			path = "Target Support Files/Pods-Elina_Tests";
+			sourceTree = "<group>";
+		};
+		771F3CA5A9071ACE2173056B9BFBDE93 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E1A0CB29347A900897C475A8B2A1EED1 /* Elina.framework */,
+				E3FEA9C87B582C83A700620BDF9C96A3 /* Pods_Elina_Tests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				32B838D2697DDD876C36BDEBC09BFD2E /* Development Pods */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				771F3CA5A9071ACE2173056B9BFBDE93 /* Products */,
+				CDFBF9B0233869807BAADDD76503A429 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		8A3248CCA7411890B4050353B702E1E1 /* Elina */ = {
+			isa = PBXGroup;
+			children = (
+				8BF1812A3B5856486ABEEEABA3FB0251 /* Elina.swift */,
+				1D1BF7F8CD1371C0CA8B9A3C6C3390F1 /* Support Files */,
+			);
+			name = Elina;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CDFBF9B0233869807BAADDD76503A429 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				65B9BF88ADB335B6526DA14021BA9DE0 /* Pods-Elina_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		646827B28EC2EBC3322D312DD3D30581 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7946256C60EAAE4D4018A3F636ABEE3 /* Pods-Elina_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB66A76B5480028FA843115F66D07B3B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C188C9935A51E41207E6B79E7F88CA6D /* Elina-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		31A7E491D67012603BA3612BD515CBB5 /* Pods-Elina_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1E52CB67B57AADB4360EAAE8C1B3FE24 /* Build configuration list for PBXNativeTarget "Pods-Elina_Tests" */;
+			buildPhases = (
+				D43EBE16D123793B6580A979A6CCD197 /* Sources */,
+				DA9AE6A7316EBB9027ADBA86BA4F2807 /* Frameworks */,
+				646827B28EC2EBC3322D312DD3D30581 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C2B30552A2E0E6BABE77C6161A21283D /* PBXTargetDependency */,
+			);
+			name = "Pods-Elina_Tests";
+			productName = "Pods-Elina_Tests";
+			productReference = E3FEA9C87B582C83A700620BDF9C96A3 /* Pods_Elina_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		5D6854D7C3FA01F0184A7F2B2F0EB6D1 /* Elina */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ADEC0DE9733200DDDB21DF9631F8CA96 /* Build configuration list for PBXNativeTarget "Elina" */;
+			buildPhases = (
+				EF9DEEAE56578D1EBB78090E9AFB181C /* Sources */,
+				B2E5DC799FC5FBE4E5E3730F1722B8E6 /* Frameworks */,
+				FB66A76B5480028FA843115F66D07B3B /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Elina;
+			productName = Elina;
+			productReference = E1A0CB29347A900897C475A8B2A1EED1 /* Elina.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 771F3CA5A9071ACE2173056B9BFBDE93 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5D6854D7C3FA01F0184A7F2B2F0EB6D1 /* Elina */,
+				31A7E491D67012603BA3612BD515CBB5 /* Pods-Elina_Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D43EBE16D123793B6580A979A6CCD197 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3CA836AF2C86C520956D730D05A0C2C5 /* Pods-Elina_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF9DEEAE56578D1EBB78090E9AFB181C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				278DAC87D8AE0F740682BA72CDD9A74A /* Elina-dummy.m in Sources */,
+				9927352AD40F13EC6C62AC5BC527685B /* Elina.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C2B30552A2E0E6BABE77C6161A21283D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Elina;
+			target = 5D6854D7C3FA01F0184A7F2B2F0EB6D1 /* Elina */;
+			targetProxy = 5B3725CA66BEB5CB93ED722A2C621854 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1765E56DD4BED8C835ED530A56D3E03C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5E0F5CB3EBE482380E2B2753E2798146 /* Pods-Elina_Tests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Elina_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Elina_Tests/Pods-Elina_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Elina_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		33DA7F43A1D2FA3C74A8C8FC246E1FA6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		34DAA5867CF19C378F4F2F00CD4BCFEE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 058CA002B5B872D32811CD62E8CCD89A /* Elina.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Elina/Elina-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Elina/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Elina/Elina.modulemap";
+				PRODUCT_NAME = Elina;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		731DC216E1A58545B559F6E0A2418060 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		85559A68559B90F7D3A6C1E573EE1372 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A9B23CB50D1726C82D135E30DAB5C95A /* Pods-Elina_Tests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Elina_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Elina_Tests/Pods-Elina_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Elina_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		9711620944B79565851ECD3073B97524 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 058CA002B5B872D32811CD62E8CCD89A /* Elina.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Elina/Elina-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Elina/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Elina/Elina.modulemap";
+				PRODUCT_NAME = Elina;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1E52CB67B57AADB4360EAAE8C1B3FE24 /* Build configuration list for PBXNativeTarget "Pods-Elina_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				85559A68559B90F7D3A6C1E573EE1372 /* Debug */,
+				1765E56DD4BED8C835ED530A56D3E03C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				33DA7F43A1D2FA3C74A8C8FC246E1FA6 /* Debug */,
+				731DC216E1A58545B559F6E0A2418060 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ADEC0DE9733200DDDB21DF9631F8CA96 /* Build configuration list for PBXNativeTarget "Elina" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9711620944B79565851ECD3073B97524 /* Debug */,
+				34DAA5867CF19C378F4F2F00CD4BCFEE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

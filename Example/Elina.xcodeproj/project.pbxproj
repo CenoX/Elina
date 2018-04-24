@@ -14,13 +14,13 @@
 /* Begin PBXFileReference section */
 		00FAFB9B491F142FD517F620 /* Pods-Elina_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Elina_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Elina_Tests/Pods-Elina_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		0195A41719B971FF82634133 /* Pods-Elina_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Elina_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Elina_Tests/Pods-Elina_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		47B1B224F034010127E856E3 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		47B1B224F034010127E856E3 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		607FACE51AFB9204008FA782 /* Elina_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Elina_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		8CA4976F975820BB5924A632 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		8CA4976F975820BB5924A632 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		A2E699DD37BD7E656057E92B /* Pods_Elina_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Elina_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		FF292B36C1B71DD16B71C10F /* Elina.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = Elina.podspec; path = ../Elina.podspec; sourceTree = "<group>"; };
+		FF292B36C1B71DD16B71C10F /* Elina.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Elina.podspec; path = ../Elina.podspec; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,12 +131,9 @@
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = CocoaPods;
 				TargetAttributes = {
-					607FACCF1AFB9204008FA782 = {
-						CreatedOnToolsVersion = 6.3.1;
-						LastSwiftMigration = 0900;
-					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = TSN52PT9J2;
 						LastSwiftMigration = 0900;
 						TestTargetID = 607FACCF1AFB9204008FA782;
 					};
@@ -339,6 +336,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 00FAFB9B491F142FD517F620 /* Pods-Elina_Tests.debug.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = TSN52PT9J2;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -360,6 +358,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 0195A41719B971FF82634133 /* Pods-Elina_Tests.release.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = TSN52PT9J2;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
