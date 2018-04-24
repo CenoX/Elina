@@ -19,8 +19,7 @@ enum ELState{
 }
 
 class ELScripts{
-    
-    @nonobjc class var general: [String]{
+    var general: [String]{
         return [
             "트위터는 흑역사를 만들기 매우 좋은 곳",
             "나도 인생을 살아야하는데"
@@ -28,14 +27,14 @@ class ELScripts{
         ]
     }
     
-    @nonobjc class var rhythmGame: [String]{
+    var rhythmGame: [String]{
         return [
             "19렙 PUC!!!"
             //add more Elina's cutty speechs here.
         ]
     }
     
-    @nonobjc class var drunken: [String]{
+    var drunken: [String]{
         return [
             "여러분 엘리나쨩귀엽죠???? 저도그렇게생각해요 세상에서제일귀여워 깨물어주고시퍼 꺄아앙♥",
             "귀여운 엘리나쨩이 간만에 술마셔쪄!! 헤헤헤 칭찬해줘어어 호메뗴 호메떼!!! ♡",
@@ -56,11 +55,12 @@ class ELScripts{
 
 class Elina {
     
+    fileprivate let scripts = ELScripts()
+    
     enum Sns: String{
         case twitter = "Twitter"
         case facebook = "Facebook"
     }
-    
     
     
     struct Posts{
@@ -127,11 +127,11 @@ class Elina {
         var indexString: String{
             switch state{
             case .normal:
-                return ELScripts.general[Int(arc4random_uniform(UInt32(Int32(ELScripts.general.count))))]
+                return self.scripts.general[Int(arc4random_uniform(UInt32(Int32(self.scripts.general.count))))]
             case .gaming:
-                return ELScripts.rhythmGame[Int(arc4random_uniform(UInt32(ELScripts.rhythmGame.count)))]
+                return self.scripts.rhythmGame[Int(arc4random_uniform(UInt32(self.scripts.rhythmGame.count)))]
             case .drunken:
-                return ELScripts.drunken[Int(arc4random_uniform(UInt32(ELScripts.drunken.count)))]
+                return self.scripts.drunken[Int(arc4random_uniform(UInt32(self.scripts.drunken.count)))]
             }
         }
         switch chooseSnsByState() {
