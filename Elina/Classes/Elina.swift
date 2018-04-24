@@ -12,14 +12,15 @@ var _ELINA_MAXIMUM_DRINK_AMOUNT_: Double {
     return 1
 }
 
-enum ELState{
+enum ELState {
     case normal
     case gaming
     case drunken
 }
 
-class ELScripts{
-    var general: [String]{
+class ELScripts {
+    
+    var general: [String] {
         return [
             "트위터는 흑역사를 만들기 매우 좋은 곳",
             "나도 인생을 살아야하는데"
@@ -27,14 +28,14 @@ class ELScripts{
         ]
     }
     
-    var rhythmGame: [String]{
+    var rhythmGame: [String] {
         return [
             "19렙 PUC!!!"
             //add more Elina's cutty speechs here.
         ]
     }
     
-    var drunken: [String]{
+    var drunken: [String] {
         return [
             "여러분 엘리나쨩귀엽죠???? 저도그렇게생각해요 세상에서제일귀여워 깨물어주고시퍼 꺄아앙♥",
             "귀여운 엘리나쨩이 간만에 술마셔쪄!! 헤헤헤 칭찬해줘어어 호메뗴 호메떼!!! ♡",
@@ -52,28 +53,24 @@ class ELScripts{
     }
 }
 
+enum SNS: String {
+    case twitter = "Twitter"
+    case facebook = "Facebook"
+}
 
 public class Elina {
     
     private let scripts = ELScripts()
     
-    enum Sns: String{
-        case twitter = "Twitter"
-        case facebook = "Facebook"
-    }
-    
-    
-    public struct Posts{
+    private struct Posts {
         var postIndex: String
     }
     
-    public var twitterPosts: [Posts] = []
-    public var facebookPosts: [Posts] = []
+    private var twitterPosts: [Posts] = []
+    private var facebookPosts: [Posts] = []
     
-    var alcohol: Double
+    public var alcohol: Double
     private var state: ELState
-    
-    
     
     public init() {
         self.alcohol = 0
@@ -84,10 +81,10 @@ public class Elina {
         if amount >= _ELINA_MAXIMUM_DRINK_AMOUNT_ {
             self.alcohol = _ELINA_MAXIMUM_DRINK_AMOUNT_
             self.state = .drunken
-        }else{
+        } else {
             if amount < 0 {
                 self.alcohol = 0
-            }else{
+            } else {
                 
                 self.alcohol = amount
             }
@@ -95,14 +92,15 @@ public class Elina {
         }
     }
     
-    public func relieveHangover(){
+    public func relieveHangover() {
         self.alcohol = 0
         if self.state == .drunken {
             self.state = .normal
         }
     }
     
-    public func drink(amount: Double){
+    // MARK: - Drink
+    public func drink(amount: Double) {
         
         if alcohol < 0 {
             self.alcohol = 0
@@ -116,29 +114,28 @@ public class Elina {
         if self.alcohol >= _ELINA_MAXIMUM_DRINK_AMOUNT_{
             self.alcohol = _ELINA_MAXIMUM_DRINK_AMOUNT_
             self.state = .drunken
-        }
-        else{
+        } else {
             self.state = .normal
         }
     }
     
-    public func startGame(){
+    // MARK: - Game
+    public func startGame() {
         self.state = .gaming
     }
     
-    public func stopGame(){
+    public func stopGame() {
         if alcohol == _ELINA_MAXIMUM_DRINK_AMOUNT_{
             state = .drunken
-        }
-        else{
+        } else {
             state = .normal
         }
     }
     
-    public func postSomething(){
-        
-        var indexString: String{
-            switch state{
+    // MARK: - Post
+    public func postSomething() {
+        var indexString: String {
+            switch state {
             case .normal:
                 return self.scripts.general[Int(arc4random_uniform(UInt32(Int32(self.scripts.general.count))))]
             case .gaming:
@@ -155,7 +152,7 @@ public class Elina {
         }
     }
     
-    private func chooseSnsByState()-> Sns{
+    private func chooseSnsByState()-> SNS {
         var avaliabilityOfChoosingFacebook: Int{
             switch self.state {
             case .normal:
@@ -167,17 +164,15 @@ public class Elina {
             }
         }
         
-        if Int(arc4random_uniform(100)) > avaliabilityOfChoosingFacebook{
+        if Int(arc4random_uniform(100)) > avaliabilityOfChoosingFacebook {
             return .twitter
-        }else{
+        } else {
             return .facebook
         }
     }
     
-    
-    
-    private func postScript(at sns:Sns, script: [String])-> String{
-        var uploadProfileAndTypeBySns:(String, String){
+    private func postScript(at sns:SNS, script: [String])-> String {
+        var uploadProfileAndTypeBySns:(String, String) {
             switch sns {
             case .facebook:
                 return ("김**", "업로드")
@@ -187,7 +182,19 @@ public class Elina {
         }
         return "\(uploadProfileAndTypeBySns.0)님이 \(sns.rawValue)에 \(uploadProfileAndTypeBySns.1) : \(script[Int(arc4random_uniform(UInt32(script.count)))])"
     }
+    
+    // MARK: - Get SNS Post
+    func recentPost(of sns: SNS) -> String? {
+        switch sns {
+        case .facebook:
+            return self.facebookPosts.first?.postIndex
+        case .twitter:
+            return self.twitterPosts.first?.postIndex
+        }
+    }
 }
 
 
 
+let asdf = Elina()
+asdf.recentPost(of: .facebook)
