@@ -5,7 +5,7 @@
 [![License](https://img.shields.io/cocoapods/l/Elina.svg?style=flat)](http://cocoapods.org/pods/Elina)
 [![Platform](https://img.shields.io/cocoapods/p/Elina.svg?style=flat)](http://cocoapods.org/pods/Elina)
 
-**이 프로젝트는 암묵의 룰에 따라 모든 커밋의 제목을 __엘리나냥 기여워~__로 통합하는 것을 원칙으로 합니다.**
+**이 프로젝트는 암묵의 룰에 따라 모든 커밋의 제목을 "엘리나냥 기여워~"로 통합하는 것을 원칙으로 합니다.**
 
 ## Overview
 
@@ -96,7 +96,7 @@ print(elina.facebookPosts[0].postIndex)
 Elina는 [CocoaPods](http://cocoapods.org)를 지원합니다! 당신만의 귀여운 엘리나냥을 만나보세요! 간단히 `Podfile`에 :
 
 ```ruby
-pod 'Elina'
+pod 'Elina', '~> 0.3.3'
 ```
 
 만 입력하시면 됩니다!
