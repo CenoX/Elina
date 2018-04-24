@@ -96,7 +96,7 @@ print(elina.facebookPosts[0].postIndex)
 Elina는 [CocoaPods](http://cocoapods.org)를 지원합니다! 당신만의 귀여운 엘리나냥을 만나보세요! 간단히 `Podfile`에 :
 
 ```ruby
-pod 'Elina', '~> 0.3.4'
+pod 'Elina', '~> 0.4.0'
 ```
 
 만 입력하시면 됩니다!
