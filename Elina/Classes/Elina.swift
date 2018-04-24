@@ -55,7 +55,7 @@ class ELScripts{
 
 class Elina {
     
-    fileprivate let scripts = ELScripts()
+    private let scripts = ELScripts()
     
     enum Sns: String{
         case twitter = "Twitter"
@@ -71,7 +71,7 @@ class Elina {
     var facebookPosts: [Posts] = []
     
     var alcohol: Double
-    fileprivate var state: ELState
+    private var state: ELState
     
     
     
@@ -96,7 +96,7 @@ class Elina {
     }
     
     
-    func drink(_ amount: Double){
+    func drink(amount: Double){
         if amount < 0 {
             self.alcohol = 0
         }
@@ -154,7 +154,7 @@ class Elina {
             }
         }
         
-        if arc4random_uniform(100) > avaliabilityOfChoosingFacebook{
+        if Int(arc4random_uniform(100)) > avaliabilityOfChoosingFacebook{
             return .twitter
         }else{
             return .facebook
