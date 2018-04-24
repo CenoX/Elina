@@ -11,6 +11,10 @@
 
 엘리나냥 프로젝트는 초 카와이 엘리나냥의 커여움을 세계 모두가 알게하기 위한 프로젝트입니다.
 
+CREDIT TO :
+* [엘리나](https://twitter.com/DE_v_Elina) 본인
+* [jepark-diary.tistory.com](http://jepark-diary.tistory.com/13) Pod 구현 관련하여 많이 참고하였습니다.
+
 ## Requirements
 
 * ~~엘리나냥의 귀여움에도 심쿵하지 않고 버텨낼 강한 정신력~~ 너무 과도한 귀여움으로 세계의 누구도 해내지 못하여 문단을 삭제
