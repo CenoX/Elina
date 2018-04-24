@@ -53,7 +53,7 @@ class ELScripts{
 }
 
 
-class Elina {
+public class Elina {
     
     private let scripts = ELScripts()
     
@@ -75,12 +75,12 @@ class Elina {
     
     
     
-    init() {
+    public init() {
         self.alcohol = 0
         self.state = .normal
     }
     
-    init(drink amount: Double) {
+    public init(drink amount: Double) {
         if amount >= _ELINA_MAXIMUM_DRINK_AMOUNT_ {
             self.alcohol = _ELINA_MAXIMUM_DRINK_AMOUNT_
             self.state = .drunken
@@ -97,15 +97,22 @@ class Elina {
     
     
     func drink(amount: Double){
-        if amount < 0 {
+        
+        if alcohol < 0 {
             self.alcohol = 0
+            self.state = .normal
+            
+            return
         }
-        else if amount >= _ELINA_MAXIMUM_DRINK_AMOUNT_{
+        
+        self.alcohol += amount
+        
+        if self.alcohol >= _ELINA_MAXIMUM_DRINK_AMOUNT_{
             self.alcohol = _ELINA_MAXIMUM_DRINK_AMOUNT_
             self.state = .drunken
         }
         else{
-            self.alcohol = amount
+            self.state = .normal
         }
     }
     
