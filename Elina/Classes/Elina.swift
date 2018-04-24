@@ -63,12 +63,12 @@ public class Elina {
     }
     
     
-    struct Posts{
+    public struct Posts{
         var postIndex: String
     }
     
-    var twitterPosts: [Posts] = []
-    var facebookPosts: [Posts] = []
+    public var twitterPosts: [Posts] = []
+    public var facebookPosts: [Posts] = []
     
     var alcohol: Double
     private var state: ELState
@@ -95,8 +95,14 @@ public class Elina {
         }
     }
     
+    public func relieveHangover(){
+        self.alcohol = 0
+        if self.state == .drunken {
+            self.state = .normal
+        }
+    }
     
-    func drink(amount: Double){
+    public func drink(amount: Double){
         
         if alcohol < 0 {
             self.alcohol = 0
@@ -116,11 +122,11 @@ public class Elina {
         }
     }
     
-    func startGame(){
+    public func startGame(){
         self.state = .gaming
     }
     
-    func stopGame(){
+    public func stopGame(){
         if alcohol == _ELINA_MAXIMUM_DRINK_AMOUNT_{
             state = .drunken
         }
@@ -129,7 +135,7 @@ public class Elina {
         }
     }
     
-    func postSomething(){
+    public func postSomething(){
         
         var indexString: String{
             switch state{
