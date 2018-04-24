@@ -73,8 +73,8 @@ public class Elina {
     private var state: ELState
     
     public init() {
-        self.alcohol = 0
-        self.state = .normal
+        alcohol = 0
+        state = .normal
     }
     
     public init(drink amount: Double) {
@@ -83,45 +83,42 @@ public class Elina {
             self.state = .drunken
         } else {
             if amount < 0 {
-                self.alcohol = 0
+                alcohol = 0
             } else {
-                
-                self.alcohol = amount
+                alcohol = amount
             }
-            self.state = .normal
+            state = .normal
         }
     }
     
     public func relieveHangover() {
-        self.alcohol = 0
-        if self.state == .drunken {
-            self.state = .normal
-        }
+        alcohol = 0
+        state = .normal
     }
     
     // MARK: - Drink
     public func drink(amount: Double) {
         
         if alcohol < 0 {
-            self.alcohol = 0
-            self.state = .normal
+            alcohol = 0
+            state = .normal
             
             return
         }
         
         self.alcohol += amount
         
-        if self.alcohol >= _ELINA_MAXIMUM_DRINK_AMOUNT_{
-            self.alcohol = _ELINA_MAXIMUM_DRINK_AMOUNT_
-            self.state = .drunken
+        if alcohol >= _ELINA_MAXIMUM_DRINK_AMOUNT_{
+            alcohol = _ELINA_MAXIMUM_DRINK_AMOUNT_
+            state = .drunken
         } else {
-            self.state = .normal
+            state = .normal
         }
     }
     
     // MARK: - Game
     public func startGame() {
-        self.state = .gaming
+        state = .gaming
     }
     
     public func stopGame() {
@@ -137,11 +134,11 @@ public class Elina {
         var indexString: String {
             switch state {
             case .normal:
-                return self.scripts.general[Int(arc4random_uniform(UInt32(Int32(self.scripts.general.count))))]
+                return chooseRandom(from: scripts.general)
             case .gaming:
-                return self.scripts.rhythmGame[Int(arc4random_uniform(UInt32(self.scripts.rhythmGame.count)))]
+                return chooseRandom(from: scripts.rhythmGame)
             case .drunken:
-                return self.scripts.drunken[Int(arc4random_uniform(UInt32(self.scripts.drunken.count)))]
+                return chooseRandom(from: scripts.drunken)
             }
         }
         switch chooseSnsByState() {
@@ -152,8 +149,12 @@ public class Elina {
         }
     }
     
+    private func chooseRandom(from array: [String]) -> String {
+        return array[Int(arc4random_uniform(UInt32(array.count)))]
+    }
+    
     private func chooseSnsByState()-> SNS {
-        var avaliabilityOfChoosingFacebook: Int{
+        var avaliabilityOfChoosingFacebook: Int {
             switch self.state {
             case .normal:
                 return 46
@@ -193,8 +194,3 @@ public class Elina {
         }
     }
 }
-
-
-
-let asdf = Elina()
-asdf.recentPost(of: .facebook)
