@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		00DAABB3208F0AF900B342CD /* ELScripts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00DAABB2208F0AF900B342CD /* ELScripts.swift */; };
 		278DAC87D8AE0F740682BA72CDD9A74A /* Elina-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 66A8F00A285BBAA6030B88743EECB150 /* Elina-dummy.m */; };
 		3CA836AF2C86C520956D730D05A0C2C5 /* Pods-Elina_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F58D6A41A4FCB567294DBF6E6C7E0D81 /* Pods-Elina_Tests-dummy.m */; };
 		8382E1FF0233BD21FCF058EB46383AD5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
@@ -27,6 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		00DAABB2208F0AF900B342CD /* ELScripts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ELScripts.swift; sourceTree = "<group>"; };
 		02378A2BCE3E92D38B3D07680B8BB697 /* Pods-Elina_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Elina_Tests-umbrella.h"; sourceTree = "<group>"; };
 		058CA002B5B872D32811CD62E8CCD89A /* Elina.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Elina.xcconfig; sourceTree = "<group>"; };
 		22490F3A481728A5D2EDB8AA6097E298 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -79,6 +81,7 @@
 				A5569F166B3CD5E62DE554C0708B4B42 /* Elina-prefix.pch */,
 				51F965F66749934099ECC5F009E3DDD5 /* Elina-umbrella.h */,
 				22490F3A481728A5D2EDB8AA6097E298 /* Info.plist */,
+				00DAABB2208F0AF900B342CD /* ELScripts.swift */,
 			);
 			name = "Support Files";
 			path = "Example/Pods/Target Support Files/Elina";
@@ -261,6 +264,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00DAABB3208F0AF900B342CD /* ELScripts.swift in Sources */,
 				278DAC87D8AE0F740682BA72CDD9A74A /* Elina-dummy.m in Sources */,
 				9927352AD40F13EC6C62AC5BC527685B /* Elina.swift in Sources */,
 			);
